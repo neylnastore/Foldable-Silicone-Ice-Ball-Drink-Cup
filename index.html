@@ -1,1 +1,2359 @@
-sddd
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes" />
+    <title>Foldable Silicone Ice Ball Drink Cup - Neylna Store</title>
+    <meta name="description" content="Gelas lipat silikon premium untuk es batu bulat. BPA Free, 100% Import, praktis dibawa kemana saja." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet" />
+    <style>
+        /* ===== RESET & BASE ===== */
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #f6f9fc;
+            color: #1a1a2e;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* ===== UTILITY ===== */
+        .section-padding {
+            padding: 60px 0;
+        }
+        .section-title {
+            font-size: 28px;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 12px;
+            letter-spacing: -0.5px;
+            color: #0a1628;
+        }
+        .section-subtitle {
+            text-align: center;
+            font-size: 16px;
+            color: #5a6a7e;
+            max-width: 600px;
+            margin: 0 auto 40px;
+            font-weight: 400;
+        }
+        .badge {
+            display: inline-block;
+            background: #00d4ff11;
+            color: #0088a9;
+            font-size: 12px;
+            font-weight: 600;
+            padding: 4px 14px;
+            border-radius: 20px;
+            letter-spacing: 0.3px;
+            border: 1px solid #00d4ff22;
+        }
+        .badge-gold {
+            background: #ffd70015;
+            color: #b8860b;
+            border-color: #ffd70033;
+        }
+        .btn-primary {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background: linear-gradient(135deg, #f7b731, #f5a623);
+            color: #0a1628;
+            font-weight: 700;
+            font-size: 16px;
+            padding: 16px 40px;
+            border-radius: 60px;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 30px rgba(247, 183, 49, 0.35);
+            letter-spacing: 0.3px;
+            text-align: center;
+        }
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 40px rgba(247, 183, 49, 0.45);
+        }
+        .btn-primary:active {
+            transform: scale(0.97);
+        }
+        .btn-secondary {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            background: #ffffff;
+            color: #0a1628;
+            font-weight: 600;
+            font-size: 14px;
+            padding: 12px 28px;
+            border-radius: 60px;
+            border: 2px solid #e2e8f0;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .btn-secondary:hover {
+            border-color: #0a1628;
+            background: #f8fafc;
+        }
+
+        /* ===== ANIMATIONS ===== */
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        @keyframes pulse {
+            0%,
+            100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+        }
+        @keyframes float {
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-8px);
+            }
+        }
+        @keyframes shimmer {
+            0% {
+                background-position: -200% 0;
+            }
+            100% {
+                background-position: 200% 0;
+            }
+        }
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(60px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes countPulse {
+            0%,
+            100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.5;
+            }
+        }
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 0.7s cubic-bezier(0.2, 0.9, 0.3, 1);
+        }
+        .animate-on-scroll.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ===== HEADER ===== */
+        .header {
+            background: rgba(255, 255, 255, 0.92);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+            padding: 12px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+        .header-left {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .header-logo {
+            width: 42px;
+            height: 42px;
+            border-radius: 12px;
+            object-fit: contain;
+            background: #fff;
+            padding: 4px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+        }
+        .header-store {
+            font-weight: 700;
+            font-size: 18px;
+            letter-spacing: -0.3px;
+            color: #0a1628;
+        }
+        .header-store span {
+            color: #00b4d8;
+        }
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .header-cart {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            background: #f1f5f9;
+            padding: 8px 14px;
+            border-radius: 30px;
+            font-size: 13px;
+            font-weight: 600;
+            color: #1a2a4a;
+            transition: background 0.2s;
+            cursor: default;
+        }
+        .header-cart .dot {
+            width: 8px;
+            height: 8px;
+            background: #f5a623;
+            border-radius: 50%;
+            display: inline-block;
+            animation: pulse 1.5s infinite;
+        }
+        .header-cta-sm {
+            display: none;
+            background: linear-gradient(135deg, #f7b731, #f5a623);
+            color: #0a1628;
+            font-weight: 700;
+            font-size: 13px;
+            padding: 8px 18px;
+            border-radius: 30px;
+            border: none;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .header-cta-sm:hover {
+            transform: scale(1.03);
+        }
+        @media (max-width: 640px) {
+            .header-cta-sm {
+                display: inline-block;
+            }
+            .header-cart span {
+                display: none;
+            }
+            .header-store {
+                font-size: 15px;
+            }
+            .header-logo {
+                width: 34px;
+                height: 34px;
+            }
+            .header-inner {
+                padding: 0 4px;
+            }
+        }
+
+        /* ===== HERO ===== */
+        .hero {
+            padding: 30px 0 20px;
+            background: linear-gradient(180deg, #f6f9fc 0%, #ffffff 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        .hero .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+        .hero-content {
+            animation: fadeUp 0.8s ease both;
+        }
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: #00d4ff11;
+            border: 1px solid #00d4ff22;
+            padding: 4px 16px 4px 8px;
+            border-radius: 30px;
+            font-size: 12px;
+            font-weight: 600;
+            color: #0088a9;
+            margin-bottom: 16px;
+        }
+        .hero-badge .sparkle {
+            font-size: 14px;
+        }
+        .hero h1 {
+            font-size: 38px;
+            font-weight: 800;
+            line-height: 1.15;
+            letter-spacing: -0.8px;
+            color: #0a1628;
+            margin-bottom: 16px;
+        }
+        .hero h1 .highlight {
+            background: linear-gradient(135deg, #00b4d8, #0088a9);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .hero p {
+            font-size: 17px;
+            color: #3d4e62;
+            max-width: 480px;
+            margin-bottom: 24px;
+            font-weight: 400;
+            line-height: 1.7;
+        }
+        .hero-stats {
+            display: flex;
+            gap: 28px;
+            margin-bottom: 28px;
+            flex-wrap: wrap;
+        }
+        .hero-stat {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 14px;
+            color: #3d4e62;
+            font-weight: 500;
+        }
+        .hero-stat .num {
+            font-weight: 700;
+            color: #0a1628;
+            font-size: 16px;
+            min-width: 28px;
+        }
+        .hero-stat .icon {
+            font-size: 18px;
+        }
+        .hero-cta-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+            align-items: center;
+        }
+        .hero-price {
+            font-size: 14px;
+            color: #5a6a7e;
+        }
+        .hero-price .coret {
+            text-decoration: line-through;
+            color: #aab;
+            margin-right: 8px;
+        }
+        .hero-price .jual {
+            font-weight: 700;
+            font-size: 22px;
+            color: #0a1628;
+        }
+        .hero-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: fadeUp 0.8s ease 0.2s both;
+            position: relative;
+        }
+        .hero-image .product-img {
+            width: 100%;
+            max-width: 480px;
+            border-radius: 24px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+            transition: all 0.4s ease;
+            background: #ffffff;
+        }
+        .hero-image .floating-badge {
+            position: absolute;
+            bottom: 20px;
+            right: 10px;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(8px);
+            padding: 8px 16px;
+            border-radius: 16px;
+            font-size: 12px;
+            font-weight: 600;
+            color: #0a1628;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            animation: float 3s ease-in-out infinite;
+        }
+        @media (max-width: 900px) {
+            .hero .container {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            .hero p {
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .hero-stats {
+                justify-content: center;
+            }
+            .hero-cta-group {
+                justify-content: center;
+            }
+            .hero h1 {
+                font-size: 30px;
+            }
+            .hero-image .product-img {
+                max-width: 380px;
+            }
+            .hero-image .floating-badge {
+                bottom: 10px;
+                right: 10px;
+                font-size: 10px;
+                padding: 6px 12px;
+            }
+        }
+        @media (max-width: 480px) {
+            .hero {
+                padding: 20px 0 10px;
+            }
+            .hero h1 {
+                font-size: 24px;
+            }
+            .hero p {
+                font-size: 15px;
+            }
+            .hero-stats {
+                gap: 16px;
+                font-size: 12px;
+            }
+            .hero-stat .num {
+                font-size: 14px;
+                min-width: 20px;
+            }
+            .btn-primary {
+                padding: 14px 28px;
+                font-size: 14px;
+                width: 100%;
+            }
+            .hero-price .jual {
+                font-size: 18px;
+            }
+        }
+
+        /* ===== GALLERY ===== */
+        .gallery {
+            padding: 20px 0 40px;
+            background: #ffffff;
+        }
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 12px;
+            margin-top: 8px;
+        }
+        .gallery-grid .gallery-item {
+            border-radius: 16px;
+            overflow: hidden;
+            cursor: pointer;
+            aspect-ratio: 1/1;
+            background: #f1f5f9;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+            position: relative;
+        }
+        .gallery-grid .gallery-item:hover {
+            transform: scale(1.02);
+            border-color: #00b4d855;
+            box-shadow: 0 8px 24px rgba(0, 180, 216, 0.15);
+        }
+        .gallery-grid .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: all 0.4s ease;
+        }
+        .gallery-grid .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+        .gallery-grid .gallery-item .gallery-overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(10, 22, 40, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            color: #fff;
+            font-size: 28px;
+            font-weight: 300;
+        }
+        .gallery-grid .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+        }
+        .gallery-grid .gallery-item:first-child {
+            grid-column: span 2;
+            grid-row: span 2;
+            aspect-ratio: auto;
+        }
+        @media (max-width: 700px) {
+            .gallery-grid {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 8px;
+            }
+            .gallery-grid .gallery-item:first-child {
+                grid-column: span 3;
+                grid-row: span 1;
+                aspect-ratio: 16/10;
+            }
+        }
+        @media (max-width: 480px) {
+            .gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 6px;
+            }
+            .gallery-grid .gallery-item:first-child {
+                grid-column: span 2;
+                aspect-ratio: 16/10;
+            }
+        }
+
+        /* ===== MODAL GALLERY ===== */
+        .modal-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            z-index: 9999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.35s ease;
+            padding: 20px;
+        }
+        .modal-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+        .modal-content {
+            max-width: 90vw;
+            max-height: 90vh;
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+            background: #fff;
+            transform: scale(0.9);
+            transition: all 0.35s cubic-bezier(0.2, 0.9, 0.3, 1);
+            box-shadow: 0 40px 80px rgba(0, 0, 0, 0.5);
+        }
+        .modal-overlay.active .modal-content {
+            transform: scale(1);
+        }
+        .modal-content img {
+            max-width: 100%;
+            max-height: 85vh;
+            display: block;
+            object-fit: contain;
+        }
+        .modal-close {
+            position: absolute;
+            top: 14px;
+            right: 14px;
+            background: rgba(255, 255, 255, 0.9);
+            border: none;
+            border-radius: 50%;
+            width: 44px;
+            height: 44px;
+            font-size: 22px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s;
+            color: #1a1a2e;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+        }
+        .modal-close:hover {
+            transform: rotate(90deg);
+            background: #fff;
+        }
+        @media (max-width: 480px) {
+            .modal-content {
+                max-width: 98vw;
+                border-radius: 12px;
+            }
+            .modal-close {
+                width: 36px;
+                height: 36px;
+                font-size: 18px;
+                top: 8px;
+                right: 8px;
+            }
+        }
+
+        /* ===== PROBLEM + SOLUTION ===== */
+        .problem-solution {
+            background: #ffffff;
+            padding: 60px 0;
+        }
+        .ps-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .ps-card {
+            background: #f8fafc;
+            border-radius: 24px;
+            padding: 32px 28px;
+            transition: all 0.3s ease;
+            border: 1px solid #edf2f7;
+        }
+        .ps-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 36px rgba(0, 0, 0, 0.04);
+        }
+        .ps-card .icon {
+            font-size: 32px;
+            margin-bottom: 12px;
+            display: block;
+        }
+        .ps-card h3 {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: #0a1628;
+        }
+        .ps-card p {
+            font-size: 15px;
+            color: #4a5a6e;
+            line-height: 1.7;
+        }
+        .ps-card.solution {
+            background: linear-gradient(135deg, #f0f9ff, #e6f7ff);
+            border-color: #00b4d833;
+        }
+        .ps-card.solution h3 {
+            color: #0088a9;
+        }
+        @media (max-width: 700px) {
+            .ps-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            .ps-card {
+                padding: 24px 20px;
+            }
+        }
+
+        /* ===== FEATURES ===== */
+        .features {
+            background: #f6f9fc;
+            padding: 60px 0;
+        }
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            margin-top: 16px;
+        }
+        .feature-item {
+            background: #ffffff;
+            border-radius: 20px;
+            padding: 28px 24px;
+            text-align: center;
+            transition: all 0.3s ease;
+            border: 1px solid #edf2f7;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+        }
+        .feature-item:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 16px 40px rgba(0, 0, 0, 0.06);
+            border-color: #00b4d844;
+        }
+        .feature-item .icon {
+            font-size: 36px;
+            margin-bottom: 12px;
+            display: block;
+        }
+        .feature-item h4 {
+            font-size: 17px;
+            font-weight: 700;
+            margin-bottom: 6px;
+            color: #0a1628;
+        }
+        .feature-item p {
+            font-size: 14px;
+            color: #5a6a7e;
+            line-height: 1.6;
+        }
+        @media (max-width: 800px) {
+            .features-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 480px) {
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+            .feature-item {
+                padding: 20px 16px;
+            }
+        }
+
+        /* ===== SPECS + HOW TO USE ===== */
+        .specs-howto {
+            background: #ffffff;
+            padding: 60px 0;
+        }
+        .sh-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: start;
+        }
+        .sh-card {
+            background: #f8fafc;
+            border-radius: 24px;
+            padding: 32px 28px;
+            border: 1px solid #edf2f7;
+        }
+        .sh-card h3 {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: #0a1628;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .sh-card ul {
+            list-style: none;
+            padding: 0;
+        }
+        .sh-card ul li {
+            padding: 8px 0;
+            border-bottom: 1px solid #edf2f7;
+            font-size: 15px;
+            color: #3d4e62;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .sh-card ul li:last-child {
+            border-bottom: none;
+        }
+        .sh-card ul li .check {
+            color: #00b4d8;
+            font-weight: 700;
+            font-size: 18px;
+        }
+        .sh-card .badge-cert {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: #d4edda;
+            color: #155724;
+            font-size: 13px;
+            font-weight: 600;
+            padding: 6px 16px;
+            border-radius: 30px;
+            margin-top: 12px;
+        }
+        .sh-card .howto-img {
+            border-radius: 16px;
+            overflow: hidden;
+            margin-top: 12px;
+            background: #f1f5f9;
+        }
+        .sh-card .howto-img img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        @media (max-width: 800px) {
+            .sh-grid {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+            .sh-card {
+                padding: 24px 20px;
+            }
+        }
+
+        /* ===== TESTIMONIALS ===== */
+        .testimonials {
+            background: #f6f9fc;
+            padding: 60px 0;
+        }
+        .testi-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .testi-item {
+            background: #ffffff;
+            border-radius: 20px;
+            padding: 24px 24px 20px;
+            border: 1px solid #edf2f7;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+        }
+        .testi-item:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.05);
+        }
+        .testi-item .stars {
+            color: #f5a623;
+            font-size: 16px;
+            letter-spacing: 2px;
+            margin-bottom: 6px;
+        }
+        .testi-item .text {
+            font-size: 15px;
+            color: #1a2a4a;
+            line-height: 1.7;
+            margin-bottom: 10px;
+            font-style: italic;
+        }
+        .testi-item .author {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .testi-item .author .avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #00b4d8, #0088a9);
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 16px;
+            flex-shrink: 0;
+        }
+        .testi-item .author .info {
+            font-size: 14px;
+        }
+        .testi-item .author .info .name {
+            font-weight: 700;
+            color: #0a1628;
+        }
+        .testi-item .author .info .role {
+            color: #5a6a7e;
+            font-size: 13px;
+        }
+        @media (max-width: 700px) {
+            .testi-grid {
+                grid-template-columns: 1fr;
+                gap: 16px;
+            }
+            .testi-item {
+                padding: 18px 16px;
+            }
+        }
+
+        /* ===== URGENCY / SCARCITY ===== */
+        .urgency {
+            background: linear-gradient(135deg, #0a1628, #1a2a4a);
+            color: #fff;
+            padding: 50px 0;
+            position: relative;
+            overflow: hidden;
+        }
+        .urgency::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at 20% 50%, #00b4d822, transparent 60%);
+            pointer-events: none;
+        }
+        .urgency-inner {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+        .urgency-left h2 {
+            font-size: 28px;
+            font-weight: 800;
+            margin-bottom: 8px;
+            letter-spacing: -0.5px;
+        }
+        .urgency-left h2 .gold {
+            color: #f7b731;
+        }
+        .urgency-left p {
+            font-size: 16px;
+            color: #b0c4d9;
+            margin-bottom: 20px;
+        }
+        .urgency-counters {
+            display: flex;
+            gap: 32px;
+            flex-wrap: wrap;
+        }
+        .urgency-counter {
+            display: flex;
+            flex-direction: column;
+        }
+        .urgency-counter .label {
+            font-size: 13px;
+            color: #8aa3b9;
+            font-weight: 500;
+        }
+        .urgency-counter .value {
+            font-size: 32px;
+            font-weight: 800;
+            color: #fff;
+            letter-spacing: -0.5px;
+        }
+        .urgency-counter .value .pulse {
+            animation: countPulse 1.2s infinite;
+            display: inline-block;
+        }
+        .urgency-right {
+            background: rgba(255, 255, 255, 0.06);
+            backdrop-filter: blur(8px);
+            border-radius: 24px;
+            padding: 28px 24px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            text-align: center;
+        }
+        .urgency-right .countdown {
+            display: flex;
+            justify-content: center;
+            gap: 14px;
+            margin: 12px 0 16px;
+        }
+        .urgency-right .countdown .cd-item {
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 14px;
+            padding: 10px 14px;
+            min-width: 60px;
+            text-align: center;
+        }
+        .urgency-right .countdown .cd-item .cd-num {
+            font-size: 32px;
+            font-weight: 800;
+            line-height: 1;
+            color: #fff;
+        }
+        .urgency-right .countdown .cd-item .cd-label {
+            font-size: 11px;
+            color: #8aa3b9;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-top: 2px;
+        }
+        .urgency-right .stock-bar {
+            width: 100%;
+            height: 6px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 10px 0 8px;
+        }
+        .urgency-right .stock-bar .fill {
+            height: 100%;
+            background: linear-gradient(90deg, #f7b731, #f5a623);
+            border-radius: 10px;
+            transition: width 1s ease;
+            width: 72%;
+        }
+        .urgency-right .stock-text {
+            font-size: 14px;
+            color: #b0c4d9;
+        }
+        .urgency-right .stock-text strong {
+            color: #f7b731;
+        }
+        .urgency-right .btn-primary {
+            margin-top: 16px;
+            width: 100%;
+        }
+        @media (max-width: 800px) {
+            .urgency-inner {
+                grid-template-columns: 1fr;
+                gap: 28px;
+                text-align: center;
+            }
+            .urgency-counters {
+                justify-content: center;
+            }
+            .urgency-left h2 {
+                font-size: 24px;
+            }
+            .urgency-right .countdown .cd-item {
+                min-width: 50px;
+                padding: 8px 10px;
+            }
+            .urgency-right .countdown .cd-item .cd-num {
+                font-size: 26px;
+            }
+        }
+        @media (max-width: 480px) {
+            .urgency {
+                padding: 36px 0;
+            }
+            .urgency-left h2 {
+                font-size: 20px;
+            }
+            .urgency-counter .value {
+                font-size: 24px;
+            }
+            .urgency-right .countdown {
+                gap: 8px;
+            }
+            .urgency-right .countdown .cd-item {
+                min-width: 42px;
+                padding: 6px 8px;
+            }
+            .urgency-right .countdown .cd-item .cd-num {
+                font-size: 20px;
+            }
+        }
+
+        /* ===== PRICING + CTA ===== */
+        .pricing-cta {
+            background: #ffffff;
+            padding: 50px 0 60px;
+        }
+        .pricing-box {
+            max-width: 780px;
+            margin: 0 auto;
+            background: #f8fafc;
+            border-radius: 28px;
+            padding: 40px 36px;
+            text-align: center;
+            border: 1px solid #edf2f7;
+            box-shadow: 0 8px 40px rgba(0, 0, 0, 0.04);
+            position: relative;
+            overflow: hidden;
+        }
+        .pricing-box .ribbon {
+            position: absolute;
+            top: 16px;
+            right: -32px;
+            background: linear-gradient(135deg, #f7b731, #f5a623);
+            color: #0a1628;
+            font-weight: 700;
+            font-size: 12px;
+            padding: 6px 40px;
+            transform: rotate(45deg);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            box-shadow: 0 4px 12px rgba(247, 183, 49, 0.3);
+        }
+        .pricing-box .price-main {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 18px;
+            flex-wrap: wrap;
+            margin-bottom: 8px;
+        }
+        .pricing-box .price-main .normal {
+            font-size: 20px;
+            color: #8aa3b9;
+            text-decoration: line-through;
+            font-weight: 400;
+        }
+        .pricing-box .price-main .sale {
+            font-size: 42px;
+            font-weight: 800;
+            color: #0a1628;
+            letter-spacing: -1px;
+        }
+        .pricing-box .price-main .sale .small {
+            font-size: 20px;
+            font-weight: 600;
+        }
+        .pricing-box .price-sub {
+            font-size: 14px;
+            color: #5a6a7e;
+            margin-bottom: 6px;
+        }
+        .pricing-box .price-sub .promo {
+            display: inline-block;
+            background: #d4edda;
+            color: #155724;
+            font-weight: 600;
+            padding: 2px 14px;
+            border-radius: 20px;
+            font-size: 13px;
+        }
+        .pricing-box .bonus {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin: 16px 0 20px;
+            font-size: 14px;
+            color: #3d4e62;
+        }
+        .pricing-box .bonus .item {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            background: #fff;
+            padding: 6px 16px;
+            border-radius: 30px;
+            border: 1px solid #edf2f7;
+        }
+        .pricing-box .bonus .item .emoji {
+            font-size: 18px;
+        }
+        .pricing-box .btn-primary {
+            font-size: 18px;
+            padding: 18px 48px;
+            width: 100%;
+            max-width: 420px;
+            margin: 4px auto 10px;
+        }
+        .pricing-box .btn-primary .sub {
+            font-size: 13px;
+            font-weight: 500;
+            opacity: 0.85;
+        }
+        .pricing-box .secure-badges {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 14px;
+            font-size: 13px;
+            color: #5a6a7e;
+        }
+        .pricing-box .secure-badges .item {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        /* ===== KODE PROMO DENGAN TOMBOL SALIN ===== */
+        .promo-code-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin: 6px 0 10px;
+            background: #0a1628;
+            padding: 8px 16px 8px 20px;
+            border-radius: 60px;
+            border: 1px dashed #f7b73155;
+            max-width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .promo-code-wrapper .code {
+            font-weight: 700;
+            font-size: 18px;
+            color: #f7b731;
+            letter-spacing: 2px;
+            font-family: 'Inter', monospace;
+        }
+        .promo-code-wrapper .copy-btn {
+            background: rgba(255, 255, 255, 0.12);
+            border: none;
+            color: #f7b731;
+            font-size: 14px;
+            padding: 6px 14px;
+            border-radius: 30px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            border: 1px solid #f7b73133;
+        }
+        .promo-code-wrapper .copy-btn:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: scale(1.03);
+        }
+        .promo-code-wrapper .copy-btn:active {
+            transform: scale(0.95);
+        }
+        .promo-code-wrapper .copy-btn.copied {
+            background: #28a745;
+            color: #fff;
+            border-color: #28a745;
+        }
+        .promo-instruction {
+            font-size: 13px;
+            color: #5a6a7e;
+            margin-top: -2px;
+            margin-bottom: 10px;
+        }
+        .promo-instruction strong {
+            color: #0a1628;
+        }
+
+        @media (max-width: 600px) {
+            .pricing-box {
+                padding: 28px 16px;
+                border-radius: 20px;
+            }
+            .pricing-box .price-main .sale {
+                font-size: 32px;
+            }
+            .pricing-box .price-main .normal {
+                font-size: 16px;
+            }
+            .pricing-box .btn-primary {
+                font-size: 16px;
+                padding: 16px 24px;
+            }
+            .pricing-box .bonus {
+                gap: 10px;
+            }
+            .pricing-box .bonus .item {
+                font-size: 12px;
+                padding: 4px 12px;
+            }
+            .pricing-box .ribbon {
+                font-size: 10px;
+                padding: 4px 32px;
+                top: 12px;
+                right: -28px;
+            }
+            .promo-code-wrapper {
+                padding: 6px 12px;
+                border-radius: 40px;
+                max-width: 100%;
+            }
+            .promo-code-wrapper .code {
+                font-size: 15px;
+            }
+            .promo-code-wrapper .copy-btn {
+                font-size: 12px;
+                padding: 4px 12px;
+            }
+            .promo-instruction {
+                font-size: 12px;
+            }
+        }
+
+        /* ===== ORDER FORM ===== */
+        .order-section {
+            background: #f6f9fc;
+            padding: 50px 0 60px;
+        }
+        .order-section .container {
+            max-width: 800px;
+        }
+        .order-section .form-wrapper {
+            background: #ffffff;
+            border-radius: 28px;
+            padding: 32px 28px;
+            border: 1px solid #edf2f7;
+            box-shadow: 0 8px 40px rgba(0, 0, 0, 0.04);
+            min-height: 300px;
+            position: relative;
+        }
+        .order-section .form-wrapper .ooef {
+            position: relative;
+            min-height: 200px;
+        }
+        .order-section .form-wrapper .ooef-loader {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #fff;
+            z-index: 2;
+            border-radius: 20px;
+        }
+        .order-section .form-wrapper .ooef-loader.hidden {
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.5s ease;
+        }
+        .order-section .form-wrapper .ooef-loader .spinner {
+            width: 40px;
+            height: 40px;
+            border: 4px solid #edf2f7;
+            border-top-color: #00b4d8;
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+        }
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+        @media (max-width: 480px) {
+            .order-section .form-wrapper {
+                padding: 16px 12px;
+                border-radius: 20px;
+            }
+        }
+
+        /* ===== FAKE POPUP ===== */
+        .fake-popup {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            z-index: 9998;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-radius: 18px;
+            padding: 14px 18px;
+            box-shadow: 0 12px 48px rgba(0, 0, 0, 0.12);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            max-width: 340px;
+            width: calc(100% - 40px);
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            transform: translateY(120px);
+            opacity: 0;
+            transition: all 0.5s cubic-bezier(0.2, 0.9, 0.3, 1);
+            cursor: pointer;
+            user-select: none;
+        }
+        .fake-popup.show {
+            transform: translateY(0);
+            opacity: 1;
+        }
+        .fake-popup .fp-avatar {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #00b4d8, #0088a9);
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 18px;
+            flex-shrink: 0;
+        }
+        .fake-popup .fp-content {
+            flex: 1;
+            min-width: 0;
+        }
+        .fake-popup .fp-content .fp-name {
+            font-weight: 700;
+            font-size: 14px;
+            color: #0a1628;
+        }
+        .fake-popup .fp-content .fp-region {
+            font-size: 12px;
+            color: #5a6a7e;
+        }
+        .fake-popup .fp-content .fp-product {
+            font-size: 12px;
+            color: #0088a9;
+            font-weight: 500;
+            margin-top: 1px;
+        }
+        .fake-popup .fp-close {
+            background: none;
+            border: none;
+            font-size: 18px;
+            color: #8aa3b9;
+            cursor: pointer;
+            padding: 0 4px;
+            transition: color 0.2s;
+            flex-shrink: 0;
+        }
+        .fake-popup .fp-close:hover {
+            color: #1a1a2e;
+        }
+        .fake-popup .fp-time {
+            font-size: 10px;
+            color: #8aa3b9;
+            margin-top: 2px;
+        }
+        @media (max-width: 480px) {
+            .fake-popup {
+                bottom: 12px;
+                left: 12px;
+                padding: 10px 14px;
+                border-radius: 14px;
+                max-width: 300px;
+            }
+            .fake-popup .fp-avatar {
+                width: 36px;
+                height: 36px;
+                font-size: 14px;
+            }
+            .fake-popup .fp-content .fp-name {
+                font-size: 13px;
+            }
+            .fake-popup .fp-content .fp-region {
+                font-size: 11px;
+            }
+        }
+
+        /* ===== FOOTER ===== */
+        .footer {
+            background: #0a1628;
+            color: #8aa3b9;
+            padding: 30px 0 24px;
+            text-align: center;
+            font-size: 14px;
+        }
+        .footer a {
+            color: #b0c4d9;
+            transition: color 0.2s;
+        }
+        .footer a:hover {
+            color: #fff;
+        }
+        .footer .brand {
+            font-weight: 700;
+            color: #fff;
+            font-size: 16px;
+            margin-bottom: 4px;
+        }
+        .footer .brand span {
+            color: #00b4d8;
+        }
+        .footer .links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin: 8px 0;
+        }
+        .footer .copy {
+            font-size: 13px;
+            opacity: 0.7;
+        }
+
+        /* ===== RESPONSIVE FINE-TUNE ===== */
+        @media (max-width: 480px) {
+            .section-title {
+                font-size: 22px;
+            }
+            .section-subtitle {
+                font-size: 14px;
+                margin-bottom: 28px;
+            }
+            .section-padding {
+                padding: 40px 0;
+            }
+            .container {
+                padding: 0 14px;
+            }
+            .sh-card h3 {
+                font-size: 17px;
+            }
+            .sh-card ul li {
+                font-size: 14px;
+            }
+        }
+
+        /* ===== WHATSAPP FLOATING ===== */
+        .wa-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 9997;
+            background: #25d366;
+            color: #fff;
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            box-shadow: 0 8px 32px rgba(37, 211, 102, 0.35);
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .wa-float:hover {
+            transform: scale(1.08);
+            box-shadow: 0 12px 40px rgba(37, 211, 102, 0.45);
+        }
+        @media (max-width: 480px) {
+            .wa-float {
+                width: 48px;
+                height: 48px;
+                font-size: 22px;
+                bottom: 14px;
+                right: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header class="header" id="header">
+        <div class="container header-inner">
+            <div class="header-left">
+                <img class="header-logo" src="https://cdn.orderonline.id/uploads/images_8057731750768190275.png" alt="Neylna Store Logo" loading="lazy" />
+                <div class="header-store">Neylna <span>Store</span></div>
+            </div>
+            <div class="header-actions">
+                <div class="header-cart">
+                    <span class="dot"></span>
+                    <span>Pesanan <strong id="headerOrderCount">0</strong></span>
+                </div>
+                <a href="#pricing" class="header-cta-sm">Beli Sekarang</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="sparkle">✦</span> 100% BPA Free · Import Premium
+                </div>
+                <h1>
+                    Gelas Lipat Silikon<br />
+                    <span class="highlight">Es Batu Bulat</span> Praktis
+                </h1>
+                <p>
+                    Nikmati minuman dingin favoritmu di mana saja dengan gelas silikon
+                    fleksibel yang bisa dilipat. Bebas BPA, anti bocor, dan mudah dibawa.
+                </p>
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <span class="icon">👀</span>
+                        <span class="num" id="viewerCount">1.2k</span> orang melihat
+                    </div>
+                    <div class="hero-stat">
+                        <span class="icon">📦</span>
+                        <span class="num" id="stockCount">47</span> tersisa
+                    </div>
+                    <div class="hero-stat">
+                        <span class="icon">⭐</span>
+                        4.9 / 5 (1.2k+ ulasan)
+                    </div>
+                </div>
+                <div class="hero-cta-group">
+                    <a href="#pricing" class="btn-primary">
+                        🛒 Beli Sekarang
+                    </a>
+                    <div class="hero-price">
+                        <span class="coret">Rp288.150</span>
+                        <span class="jual">Rp169.500</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img class="product-img" src="https://img.staticdj.com/1abedf928a1be80e02d10a517483cb03_750x.jpeg" alt="Foldable Silicone Ice Ball Drink Cup" loading="lazy" />
+                <div class="floating-badge">
+                    🔥 <strong>HOT</strong> · 100+ terjual hari ini
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== GALLERY ===== -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="section-title" style="font-size:22px;margin-bottom:4px;">📸 Lihat Produk</div>
+            <p style="text-align:center;color:#5a6a7e;font-size:14px;margin-bottom:16px;">Klik gambar untuk memperbesar</p>
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- diisi JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PROBLEM + SOLUTION ===== -->
+    <section class="problem-solution">
+        <div class="container">
+            <div class="section-title">❄️ Masalah &amp; Solusi</div>
+            <div class="section-subtitle">Gelas biasa merepotkan? Temukan solusi praktisnya.</div>
+            <div class="ps-grid">
+                <div class="ps-card animate-on-scroll">
+                    <span class="icon">😩</span>
+                    <h3>Masalah</h3>
+                    <p>
+                        Gelas minum biasa memakan banyak tempat di tas, mudah pecah,
+                        dan sulit dinikmati saat bepergian. Es batu cepat mencair
+                        dan rasa minuman berubah.
+                    </p>
+                </div>
+                <div class="ps-card solution animate-on-scroll">
+                    <span class="icon">✨</span>
+                    <h3>Solusi</h3>
+                    <p>
+                        <strong>Foldable Silicone Ice Ball Cup</strong> — gelas lipat
+                        silikon premium yang fleksibel, tahan banting, dan bisa dilipat
+                        menjadi ukuran kecil. Bikin es batu bulat sempurna, minuman tetap
+                        dingin lebih lama. Bawa ke mana saja dengan praktis!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FEATURES ===== -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-title">🌟 Fitur Unggulan</div>
+            <div class="section-subtitle">Dirancang untuk kenyamanan dan gaya hidup modern.</div>
+            <div class="features-grid">
+                <div class="feature-item animate-on-scroll">
+                    <span class="icon">🧊</span>
+                    <h4>Cetakan Es Batu Bulat</h4>
+                    <p>Buat es batu bulat sempurna untuk minuman premium Anda.</p>
+                </div>
+                <div class="feature-item animate-on-scroll">
+                    <span class="icon">🔁</span>
+                    <h4>Lipat &amp; Simpan</h4>
+                    <p>Desain fleksibel, bisa dilipat rata untuk disimpan di tas.</p>
+                </div>
+                <div class="feature-item animate-on-scroll">
+                    <span class="icon">🛡️</span>
+                    <h4>BPA Free &amp; Food Grade</h4>
+                    <p>Terbuat dari silikon berkualitas tinggi, aman untuk kesehatan.</p>
+                </div>
+                <div class="feature-item animate-on-scroll">
+                    <span class="icon">🌡️</span>
+                    <h4>Tahan Suhu Ekstrem</h4>
+                    <p>Dari -40°C hingga 230°C, cocok untuk minuman panas &amp; dingin.</p>
+                </div>
+                <div class="feature-item animate-on-scroll">
+                    <span class="icon">💧</span>
+                    <h4>Anti Bocor</h4>
+                    <p>Segel kedap udara, tidak tumpah meskipun dalam tas.</p>
+                </div>
+                <div class="feature-item animate-on-scroll">
+                    <span class="icon">🌍</span>
+                    <h4>100% Import Premium</h4>
+                    <p>Produk berkualitas tinggi dengan standar internasional.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SPECS + HOW TO USE ===== -->
+    <section class="specs-howto" id="specs">
+        <div class="container">
+            <div class="sh-grid">
+                <div class="sh-card animate-on-scroll">
+                    <h3>📋 Spesifikasi</h3>
+                    <ul>
+                        <li><span class="check">✓</span> Bahan: Silikon Food Grade</li>
+                        <li><span class="check">✓</span> Bebas BPA &amp; Phthalate</li>
+                        <li><span class="check">✓</span> Kapasitas: 450 ml</li>
+                        <li><span class="check">✓</span> Suhu: -40°C ~ 230°C</li>
+                        <li><span class="check">✓</span> Dimensi: 12 x 12 x 15 cm (buka)</li>
+                        <li><span class="check">✓</span> Dimensi lipat: 12 x 12 x 3 cm</li>
+                        <li><span class="check">✓</span> Berat: 120 gram</li>
+                    </ul>
+                    <div class="badge-cert">✅ Tervalidasi BPA Free · 100% Import</div>
+                </div>
+                <div class="sh-card animate-on-scroll">
+                    <h3>📖 Cara Penggunaan</h3>
+                    <ul>
+                        <li><span class="check">1</span> Buka gelas dari posisi lipat</li>
+                        <li><span class="check">2</span> Isi dengan minuman favorit</li>
+                        <li><span class="check">3</span> Gunakan cetakan es batu bulat</li>
+                        <li><span class="check">4</span> Nikmati minuman dingin lebih lama</li>
+                        <li><span class="check">5</span> Lipat kembali untuk disimpan</li>
+                    </ul>
+                    <div class="howto-img">
+                        <img src="https://img.staticdj.com/b0ba5f4d0e4d456bb06c5f98ef819467_1280x.jpeg" alt="Cara Penggunaan" loading="lazy" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS ===== -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-title">💬 Testimoni Nyata</div>
+            <div class="section-subtitle">Apa kata pelanggan kami tentang produk ini.</div>
+            <div class="testi-grid" id="testiGrid">
+                <!-- diisi JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== URGENCY / SCARCITY ===== -->
+    <section class="urgency" id="urgency">
+        <div class="container urgency-inner">
+            <div class="urgency-left">
+                <h2>🔥 Promo Terbatas! <span class="gold">Hari Ini</span></h2>
+                <p>Jangan sampai kehabisan! Stok terbatas dan promo hanya berlaku hari ini.</p>
+                <div class="urgency-counters">
+                    <div class="urgency-counter">
+                        <span class="label">👀 Melihat</span>
+                        <span class="value" id="urgencyViewers">1.2k</span>
+                    </div>
+                    <div class="urgency-counter">
+                        <span class="label">📦 Stok Tersisa</span>
+                        <span class="value" id="urgencyStock"><span class="pulse">47</span></span>
+                    </div>
+                    <div class="urgency-counter">
+                        <span class="label">⚡ Terjual Hari Ini</span>
+                        <span class="value" id="todaySold">128</span>
+                    </div>
+                </div>
+            </div>
+            <div class="urgency-right">
+                <div style="font-weight:600;font-size:15px;color:#b0c4d9;">⏳ Promo berakhir dalam</div>
+                <div class="countdown" id="countdown">
+                    <div class="cd-item"><div class="cd-num" id="cdHours">02</div><div class="cd-label">Jam</div></div>
+                    <div class="cd-item"><div class="cd-num" id="cdMinutes">30</div><div class="cd-label">Menit</div></div>
+                    <div class="cd-item"><div class="cd-num" id="cdSeconds">00</div><div class="cd-label">Detik</div></div>
+                </div>
+                <div class="stock-bar">
+                    <div class="fill" id="stockFill" style="width:72%;"></div>
+                </div>
+                <div class="stock-text">🔥 Hanya <strong id="stockRemaining">47</strong> tersisa dari 150 stok!</div>
+                <a href="#pricing" class="btn-primary">🛒 Beli Sekarang — Rp169.500</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PRICING + CTA ===== -->
+    <section class="pricing-cta" id="pricing">
+        <div class="container">
+            <div class="pricing-box animate-on-scroll">
+                <div class="ribbon">🔥 PROMO</div>
+                <h2 style="font-size:22px;font-weight:700;color:#0a1628;margin-bottom:4px;">💰 Harga Spesial Hari Ini</h2>
+                <div class="price-main">
+                    <span class="normal">Rp288.150</span>
+                    <span class="sale">Rp169.500 <span class="small">/pcs</span></span>
+                </div>
+                <div class="price-sub">
+                    <span class="promo">🎉 Hemat Rp118.650 + GRATIS ONGKIR!</span>
+                </div>
+
+                <!-- ===== KODE PROMO + TOMBOL SALIN ===== -->
+                <div class="promo-code-wrapper">
+                    <span class="code">GRATISONGKIR2026</span>
+                    <button class="copy-btn" id="copyPromoBtn" onclick="copyPromoCode()">
+                        <span>📋</span> Salin
+                    </button>
+                </div>
+                <div class="promo-instruction">
+                    💡 Masukkan kode di kolom <strong>“GUNAKAN KODE KUPON”</strong> lalu klik <strong>Apply</strong>.
+                </div>
+
+                <div class="bonus">
+                    <span class="item"><span class="emoji">🎁</span> Bonus Cetakan Es</span>
+                    <span class="item"><span class="emoji">🚚</span> Gratis Ongkir s/d 30rb</span>
+                    <span class="item"><span class="emoji">🛡️</span> Garansi 7 Hari</span>
+                </div>
+                <a href="#order-form" class="btn-primary" id="ctaMain">
+                    🛒 BELI SEKARANG JUGA
+                    <span class="sub">— KHUSUS TF HARI INI DAPAT GRATIS ONGKIR s/d 30rb</span>
+                </a>
+                <div class="secure-badges">
+                    <span class="item">🔒 Pembayaran Aman</span>
+                    <span class="item">💳 Transfer / QRIS</span>
+                    <span class="item">📦 Dikirim 1-2 Hari</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ORDER FORM ===== -->
+    <section class="order-section" id="order-form">
+        <div class="container">
+            <div class="section-title" style="font-size:24px;">📋 Form Pemesanan</div>
+            <div class="section-subtitle" style="margin-bottom:20px;">Isi data diri Anda untuk memesan produk ini.</div>
+            <div class="form-wrapper">
+                <!-- OrderOnline Embed -->
+                <div class="ooef">
+                    <form class="orderonline-embed-form" data-username="vera" data-product-slug="silicone-ice-ball-drink-cup" data-product-id="6a4e420c782c5266f80a247f" id="oo-embed-form-silicone-ice-ball-drink-cup-5052" data-origin="orderonline">
+                        <div class="ooef-loader" id="ooLoader">
+                            <div class="spinner"></div>
+                            <div style="margin-top:12px;font-size:14px;color:#5a6a7e;">Memuat form pemesanan...</div>
+                        </div>
+                    </form>
+                </div>
+                <script>
+                    if (typeof xLogError != 'function') {
+                        var xLogError = function(error) {
+                            var req = new XMLHttpRequest();
+                            var payload = JSON.stringify({ url: document.location.href, line: error.line, stack: error
+                                    .stack });
+                            var params = 'message=' + encodeURIComponent(error.name) + '&payload=' + encodeURIComponent(
+                                payload) + '&type=embed&level=error';
+                            req.open('POST', 'https://api.orderonline.id/log', true);
+                            req.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+                            req.send(params);
+                        };
+                    }
+                    try {
+                        if (typeof xEmbedScript != 'function') {
+                            var xEmbedScript = function() {
+                                ! function(w, d, e, v, id, t, s) {
+                                    if (d.getElementById(id)) return;
+                                    t = d.createElement(e);
+                                    t.async = !0;
+                                    t.src = v;
+                                    t.id = id;
+                                    s = d.getElementsByTagName(e)[0];
+                                    s.parentNode.insertBefore(t, s);
+                                }(window, document, 'script', 'https://cdn.orderonline.id/js/embed-v2-slim.min.js?v=8.0.2',
+                                    'oo-embed-js');
+                            };
+                        }
+                        if (typeof xEmbedInit != 'function') {
+                            var xEmbedInit = function(w, n) {
+                                if (w.ooe) return;
+                                n = w.ooe = function() {
+                                    n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                                };
+                                if (!w._ooe) w._ooe = n;
+                                n.push = n;
+                                n.loaded = !0;
+                                n.version = '8.0.2';
+                                n.queue = [];
+                            };
+                        }
+                        xEmbedInit(window);
+                        ooe('setup', 'redirect', 'https://vera.orderonline.id');
+                        ooe('init', '5f1a7807a9bf807d6c63d963', '6a4e420c782c5266f80a247f',
+                            '6a4e420c782c5266f80a2480', 'oo-embed-form-silicone-ice-ball-drink-cup-5052', {
+                                "mode": "page",
+                                "action": "Klik untuk pemesanan",
+                                "title": "Form Pemesanan",
+                                "triggerPixel": true,
+                                "triggerGtm": false
+                            });
+                        if (!window.jQuery) {
+                            ! function(w, d, e, v, id, t, s) {
+                                if (d.getElementById(id)) return;
+                                t = d.createElement(e);
+                                t.async = !0;
+                                t.src = v;
+                                t.id = id;
+                                t.addEventListener('load', xEmbedScript);
+                                s = d.getElementsByTagName(e)[0];
+                                s.parentNode.insertBefore(t, s);
+                            }(window, document, 'script', 'https://cdn.orderonline.id/js/vendor/jquery.min.js',
+                                'oo-embed-jquery');
+                        } else {
+                            xEmbedScript();
+                        }
+                    } catch (e) {
+                        xLogError(e);
+                        throw e;
+                    }
+
+                    // Hide loader after form loads
+                    document.addEventListener('DOMContentLoaded', function() {
+                        setTimeout(function() {
+                            var loader = document.getElementById('ooLoader');
+                            if (loader) loader.classList.add('hidden');
+                        }, 3000);
+                        // Also try when iframe loads
+                        var observer = new MutationObserver(function() {
+                            var loader = document.getElementById('ooLoader');
+                            if (loader && document.querySelector('.ooef iframe')) {
+                                loader.classList.add('hidden');
+                                observer.disconnect();
+                            }
+                        });
+                        observer.observe(document.querySelector('.ooef'), { childList: true, subtree: true });
+                    });
+                </script>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FAKE POPUP ===== -->
+    <div class="fake-popup" id="fakePopup">
+        <div class="fp-avatar" id="fpAvatar">N</div>
+        <div class="fp-content">
+            <div class="fp-name" id="fpName">New Order</div>
+            <div class="fp-region" id="fpRegion">📍 Indonesia</div>
+            <div class="fp-product">🧊 Foldable Silicone Ice Ball Cup</div>
+            <div class="fp-time" id="fpTime">● Baru saja</div>
+        </div>
+        <button class="fp-close" id="fpClose">✕</button>
+    </div>
+
+    <!-- ===== MODAL GALLERY ===== -->
+    <div class="modal-overlay" id="modalGallery">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">✕</button>
+            <img id="modalImage" src="" alt="Product" />
+        </div>
+    </div>
+
+    <!-- ===== WHATSAPP FLOAT ===== -->
+    <a href="https://wa.me/6281234567890?text=Halo%20Neylna%20Store%2C%20saya%20mau%20pesan%20Foldable%20Silicone%20Ice%20Ball%20Cup" target="_blank" rel="noopener" class="wa-float" aria-label="WhatsApp">
+        💬
+    </a>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="brand">Neylna <span>Store</span></div>
+            <div class="links">
+                <a href="#hero">Beranda</a>
+                <a href="#gallery">Galeri</a>
+                <a href="#features">Fitur</a>
+                <a href="#testimonials">Testimoni</a>
+                <a href="#pricing">Beli</a>
+            </div>
+            <div class="copy">© 2026 Neylna Store. All rights reserved.</div>
+        </div>
+    </footer>
+
+    <!-- ===== JAVASCRIPT ===== -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+
+            // ============================================
+            // DATA
+            // ============================================
+
+            const galleryImages = [
+                'https://img.staticdj.com/3463e982167705bded7f347ac03234b0_540x.gif',
+                'https://img.staticdj.com/af4c0e6d3e2a79c24e6041bb11b6a95a_720x.jpeg',
+                'https://img.staticdj.com/d8e982ef52b9c57a668cd9af36223a4e_720x.png',
+                'https://img.staticdj.com/a6a496bf9fb967b448f8dd21344d7bec_720x.jpeg',
+                'https://img.staticdj.com/c652e1909c07255d77043db8942f10be_720x.jpeg',
+                'https://img.staticdj.com/77aee4f27c76f0e37588841a1f99b2ee_720x.png',
+                'https://img.staticdj.com/9daa9cc6fea9594bc1c02973fe0e557f_720x.png',
+                'https://img.staticdj.com/7cafb521f5f811c9c496a4547fb601fa_720x.png',
+                'https://img.staticdj.com/406387a471d3a74191d80afcb8bce0c7_720x.jpeg',
+                'https://img.staticdj.com/304885e60eb366035bbf277077253854_720x.jpeg',
+                'https://img.staticdj.com/fc2bb4d9f3f2928b890796d55b886568_720x.png'
+            ];
+
+            // ============================================
+            // TESTIMONI NATURAL
+            // ============================================
+            const testimonials = [{
+                name: 'Jesica',
+                role: 'Mahasiswa',
+                text: 'Eh guys, gelas ini tuh beneran praktis bgt! Bawa ke kampus tinggal lipet gitu. Es batu bulatnya kekinian, minuman tetep dingin berjam-jam. Auto rec! 😍',
+                initial: 'J'
+            }, {
+                name: 'Razan',
+                role: 'Freelance Designer',
+                text: 'Jujur awalnya agak ragu sih, tapi pas nyoba langsung klepek-klepek. Silikonnya kok tebel, anti bocor, cuci gampang. Worth it pol! 💯',
+                initial: 'R'
+            }, {
+                name: 'Alisha',
+                role: 'Ibu Rumah Tangga',
+                text: 'Anak-anak dirumah pada suka 😆 bisa bikin es batu sendiri. Bahannya aman gak bau, pelayanan Neylna Store juga ok banget. Rekomen!',
+                initial: 'A'
+            }, {
+                name: 'Farrel',
+                role: 'Content Creator',
+                text: 'Ini andalan aku buat konten minuman aesthetic. Desainnya modern, kualitas premium. Beneran rekomen!! 👍',
+                initial: 'F'
+            }];
+
+            const indonesianNames = [
+                'Keisha', 'Razan', 'Alisha', 'Farrel', 'Kayla', 'Kenzo', 'Sakura', 'Arkan',
+                'Alesha', 'Nayla', 'Ezar', 'Qiana', 'Zavier', 'Alea', 'Kyra', 'Rafa',
+                'Sienna', 'Azka', 'Carissa', 'Eason', 'Kael', 'Zayn', 'Azura', 'Elara',
+                'Mirai', 'Zara', 'Liana', 'Rania', 'Safira', 'Kirana', 'Aura', 'Orion',
+                'Atlas', 'Felix', 'Rumi', 'Hana', 'Kai', 'Rowan', 'Ezra', 'Lev'
+            ];
+
+            const regions = [
+                'Bandung', 'Yogyakarta', 'Semarang', 'Makassar', 'Medan', 'Palembang',
+                'Surabaya', 'Denpasar', 'Malang', 'Solo', 'Bekasi', 'Tangerang',
+                'Depok', 'Bogor', 'Manado', 'Padang', 'Balikpapan', 'Banjarmasin',
+                'Pontianak', 'Samarinda', 'Lombok', 'Batam', 'Pekanbaru', 'Jambi',
+                'Bengkulu', 'Bandar Lampung', 'Serang', 'Cirebon', 'Kediri', 'Madiun'
+            ];
+
+            // ============================================
+            // RENDER GALLERY
+            // ============================================
+
+            const grid = document.getElementById('galleryGrid');
+            galleryImages.forEach((url, i) => {
+                const div = document.createElement('div');
+                div.className = 'gallery-item';
+                div.setAttribute('data-index', i);
+                div.innerHTML = `
+                    <img src="${url}" alt="Produk ${i+1}" loading="lazy" />
+                    <div class="gallery-overlay">🔍</div>
+                `;
+                div.addEventListener('click', function() {
+                    openModal(url);
+                });
+                grid.appendChild(div);
+            });
+
+            // ============================================
+            // MODAL
+            // ============================================
+
+            const modalOverlay = document.getElementById('modalGallery');
+            const modalImage = document.getElementById('modalImage');
+            const modalClose = document.getElementById('modalClose');
+
+            function openModal(src) {
+                modalImage.src = src;
+                modalOverlay.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+
+            function closeModal() {
+                modalOverlay.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+
+            modalClose.addEventListener('click', closeModal);
+            modalOverlay.addEventListener('click', function(e) {
+                if (e.target === this) closeModal();
+            });
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape') closeModal();
+            });
+
+            // ============================================
+            // RENDER TESTIMONIALS
+            // ============================================
+
+            const testiGrid = document.getElementById('testiGrid');
+            testimonials.forEach((t) => {
+                const div = document.createElement('div');
+                div.className = 'testi-item animate-on-scroll';
+                div.innerHTML = `
+                    <div class="stars">★★★★★</div>
+                    <div class="text">"${t.text}"</div>
+                    <div class="author">
+                        <div class="avatar">${t.initial}</div>
+                        <div class="info">
+                            <div class="name">${t.name}</div>
+                            <div class="role">${t.role}</div>
+                        </div>
+                    </div>
+                `;
+                testiGrid.appendChild(div);
+            });
+
+            // ============================================
+            // DYNAMIC COUNTERS (Viewers, Stock)
+            // ============================================
+
+            let viewers = 1247;
+            let stock = 47;
+            const maxStock = 150;
+            let todaySold = 128;
+
+            function updateCounters() {
+                // Viewers + random
+                viewers += Math.floor(Math.random() * 8) + 2;
+                document.getElementById('viewerCount').textContent = formatNumber(viewers);
+                document.getElementById('urgencyViewers').textContent = formatNumber(viewers);
+
+                // Stock - sometimes
+                if (Math.random() < 0.15 && stock > 2) {
+                    stock -= 1;
+                    document.getElementById('stockCount').textContent = stock;
+                    document.getElementById('urgencyStock').innerHTML =
+                        `<span class="pulse">${stock}</span>`;
+                    document.getElementById('stockRemaining').textContent = stock;
+                    const pct = ((stock / maxStock) * 100);
+                    document.getElementById('stockFill').style.width = Math.max(5, pct) + '%';
+
+                    // update header order count
+                    const sold = maxStock - stock;
+                    document.getElementById('headerOrderCount').textContent = sold;
+                    document.getElementById('todaySold').textContent = maxStock - stock;
+                }
+
+                // Today sold increment
+                if (Math.random() < 0.08) {
+                    todaySold += 1;
+                    document.getElementById('todaySold').textContent = todaySold;
+                }
+            }
+
+            function formatNumber(num) {
+                if (num >= 1000) return (num / 1000).toFixed(1) + 'k';
+                return num.toString();
+            }
+
+            setInterval(updateCounters, 4000);
+
+            // ============================================
+            // COUNTDOWN TIMER (2 jam)
+            // ============================================
+
+            let totalSeconds = 7200; // 2 jam
+
+            function updateCountdown() {
+                if (totalSeconds <= 0) {
+                    totalSeconds = 7200; // reset
+                }
+                const hours = Math.floor(totalSeconds / 3600);
+                const minutes = Math.floor((totalSeconds % 3600) / 60);
+                const seconds = totalSeconds % 60;
+
+                document.getElementById('cdHours').textContent = String(hours).padStart(2, '0');
+                document.getElementById('cdMinutes').textContent = String(minutes).padStart(2, '0');
+                document.getElementById('cdSeconds').textContent = String(seconds).padStart(2, '0');
+
+                totalSeconds--;
+            }
+            setInterval(updateCountdown, 1000);
+            updateCountdown();
+
+            // ============================================
+            // FAKE POPUP — NEW ORDER
+            // ============================================
+
+            const popup = document.getElementById('fakePopup');
+            const fpAvatar = document.getElementById('fpAvatar');
+            const fpName = document.getElementById('fpName');
+            const fpRegion = document.getElementById('fpRegion');
+            const fpTime = document.getElementById('fpTime');
+            const fpClose = document.getElementById('fpClose');
+
+            let popupTimeout = null;
+            let isPopupVisible = false;
+
+            function getRandomItem(arr) {
+                return arr[Math.floor(Math.random() * arr.length)];
+            }
+
+            function getRandomName() {
+                let name;
+                let attempts = 0;
+                do {
+                    name = getRandomItem(indonesianNames);
+                    attempts++;
+                } while (attempts < 10 && ['Jesica', 'Razan', 'Alisha', 'Farrel'].includes(name));
+                return name;
+            }
+
+            function showFakePopup() {
+                const name = getRandomName();
+                const region = getRandomItem(regions);
+                const initial = name.charAt(0).toUpperCase();
+
+                fpAvatar.textContent = initial;
+                fpName.textContent = name + ' — ' + (Math.random() > 0.5 ? '🛒' : '✅') + ' Pesanan Baru';
+                fpRegion.textContent = '📍 ' + region + ', Indonesia';
+                fpTime.textContent = '● ' + ['Baru saja', '1 menit lalu', '2 menit lalu', '3 menit lalu'][Math.floor(Math
+                .random() * 4)];
+
+                popup.classList.add('show');
+                isPopupVisible = true;
+
+                // Auto hide after 6 seconds
+                if (popupTimeout) clearTimeout(popupTimeout);
+                popupTimeout = setTimeout(function() {
+                    hidePopup();
+                }, 6000);
+
+                // Update order count in header
+                const current = parseInt(document.getElementById('headerOrderCount').textContent) || 0;
+                document.getElementById('headerOrderCount').textContent = current + 1;
+            }
+
+            function hidePopup() {
+                popup.classList.remove('show');
+                isPopupVisible = false;
+                if (popupTimeout) {
+                    clearTimeout(popupTimeout);
+                    popupTimeout = null;
+                }
+            }
+
+            // Close button
+            fpClose.addEventListener('click', function(e) {
+                e.stopPropagation();
+                hidePopup();
+            });
+
+            // Click popup to expand/skip (hide)
+            popup.addEventListener('click', function(e) {
+                if (e.target === fpClose) return;
+                hidePopup();
+            });
+
+            // Swipe up to dismiss (touch)
+            let touchStartY = 0;
+            popup.addEventListener('touchstart', function(e) {
+                touchStartY = e.touches[0].clientY;
+            }, { passive: true });
+            popup.addEventListener('touchend', function(e) {
+                const diff = touchStartY - e.changedTouches[0].clientY;
+                if (diff > 30) {
+                    hidePopup();
+                }
+            }, { passive: true });
+
+            // Show first popup after 3s, then every 4-7s
+            setTimeout(function() {
+                showFakePopup();
+                setInterval(function() {
+                    if (!isPopupVisible) {
+                        showFakePopup();
+                    }
+                }, 5000 + Math.random() * 4000);
+            }, 3000);
+
+            // ============================================
+            // SCROLL ANIMATIONS (Intersection Observer)
+            // ============================================
+
+            const animElements = document.querySelectorAll('.animate-on-scroll');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+
+            animElements.forEach(el => observer.observe(el));
+
+            // ============================================
+            // SMOOTH SCROLL untuk CTA
+            // ============================================
+
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    if (href === '#') return;
+                    const target = document.querySelector(href);
+                    if (target) {
+                        e.preventDefault();
+                        const offset = 80;
+                        const top = target.getBoundingClientRect().top + window.pageYOffset - offset;
+                        window.scrollTo({ top, behavior: 'smooth' });
+                    }
+                });
+            });
+
+            // ============================================
+            // HEADER SCROLL SHADOW
+            // ============================================
+
+            let lastScroll = 0;
+            window.addEventListener('scroll', function() {
+                const header = document.getElementById('header');
+                if (window.scrollY > 20) {
+                    header.style.boxShadow = '0 2px 24px rgba(0,0,0,0.06)';
+                } else {
+                    header.style.boxShadow = 'none';
+                }
+            });
+
+            console.log('🚀 Neylna Store Landing Page loaded successfully!');
+            console.log('📦 Produk: Foldable Silicone Ice Ball Drink Cup');
+            console.log('💰 Harga: Rp169.500 (coret Rp288.150)');
+            console.log('🎫 Kode Promo: GRATISONGKIR2026');
+        });
+
+        // ============================================
+        // FUNGSI COPY KODE PROMO (global)
+        // ============================================
+        function copyPromoCode() {
+            const code = 'GRATISONGKIR2026';
+            const btn = document.getElementById('copyPromoBtn');
+
+            // Gunakan Clipboard API jika tersedia
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+                navigator.clipboard.writeText(code).then(() => {
+                    btn.classList.add('copied');
+                    btn.innerHTML = '✅ Tersalin!';
+                    setTimeout(() => {
+                        btn.classList.remove('copied');
+                        btn.innerHTML = '<span>📋</span> Salin';
+                    }, 2500);
+                }).catch(() => {
+                    fallbackCopy(code, btn);
+                });
+            } else {
+                fallbackCopy(code, btn);
+            }
+        }
+
+        function fallbackCopy(text, btn) {
+            // Fallback: buat input tersembunyi
+            const input = document.createElement('input');
+            input.value = text;
+            input.style.position = 'fixed';
+            input.style.opacity = '0';
+            document.body.appendChild(input);
+            input.select();
+            try {
+                document.execCommand('copy');
+                btn.classList.add('copied');
+                btn.innerHTML = '✅ Tersalin!';
+                setTimeout(() => {
+                    btn.classList.remove('copied');
+                    btn.innerHTML = '<span>📋</span> Salin';
+                }, 2500);
+            } catch (err) {
+                alert('Gagal menyalin, silakan salin manual: ' + text);
+            }
+            document.body.removeChild(input);
+        }
+    </script>
+
+</body>
+</html>
